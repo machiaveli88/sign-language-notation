@@ -1,5 +1,3 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-});
+const withCss = require('@zeit/next-css');
 
-module.exports = withBundleAnalyzer();
+module.exports = withCss();

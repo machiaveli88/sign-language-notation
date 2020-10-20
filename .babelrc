@@ -2,21 +2,11 @@
   "presets": ["next/babel"],
   "plugins": [
     [
-      "import",
+      "babel-plugin-macros",
       {
-        "libraryName": "antd",
-        "libraryDirectory": "lib",
-        "style": "index.css"
+        "config": "./src/tailwind.config.js",
+        "format": "auto"
       }
-    ],
-    [
-      "import",
-      {
-        "libraryName": "@ant-design/icons",
-        "libraryDirectory": "lib/icons",
-        "camel2DashComponentName": false
-      },
-      "@ant-design/icons"
     ]
   ]
 }
